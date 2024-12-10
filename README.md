@@ -20,6 +20,7 @@ The following Docker Swarm secrets are supported for secure configuration:
 - `S3_BUCKET_FILE` - Contains the AWS S3 bucket name.
 - `S3_ENDPOINT_FILE` - Contains the custom AWS S3 endpoint (optional).
 
+
 # Usage
 
 ## Backup
