@@ -49,8 +49,8 @@ jobs:
           context: .
           push: true
           tags: |
-            aspian87/postgres-backup-s3:${{ matrix.postgres }}  # DockerHub tag
-            ghcr.io/${{ github.repository }}:${{ matrix.postgres }}  # GitHub Container Registry tag
+            ${{ secrets.DOCKERHUB_USERNAME }}/postgres-backup-s3:${{ matrix.postgres }}
+            ghcr.io/${{ github.repository }}:${{ matrix.postgres }}
           build-args: |
             ALPINE_VERSION=${{ matrix.alpine }}
           platforms: |
